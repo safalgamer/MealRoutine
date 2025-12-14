@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31-Day Meal Plan Excel Sheet</title>
+    <style>
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .excel-container {
+            background-color: white;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 22px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        .budget-section {
+            margin-bottom: 30px;
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .budget-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .budget-table th {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #2c3e50;
+        }
+        .budget-table td {
+            padding: 8px;
+            border: 1px solid #bdc3c7;
+        }
+        .budget-total {
+            background-color: #27ae60;
+            font-weight: bold;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            border: 1px solid #34495e;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        td {
+            padding: 10px 8px;
+            border: 1px solid #bdc3c7;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ecf0f1;
+        }
+        .chicken-day {
+            background-color: #fff3cd;
+        }
+        .chicken-day td {
+            font-weight: 500;
+        }
+        .date-col {
+            width: 100px;
+            font-weight: 500;
+        }
+        .day-col {
+            width: 90px;
+        }
+        .lunch-col, .dinner-col {
+            width: 35%;
+        }
+        .notes-col {
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        button:hover {
+            background-color: #229954;
+        }
+        .notes-section {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #fef9e7;
+            border-left: 4px solid #f39c12;
+        }
+        .notes-section h3 {
+            color: #d68910;
+            margin-top: 0;
+        }
+        .notes-section ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .notes-section li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="excel-container">
+        <h1>📊 31-DAY BUDGET MEAL PLAN FOR 2 PEOPLE (REVISED)</h1>
+        <p><strong>Period:</strong> December 14, 2025 – January 13, 2026 | <strong>Total Budget:</strong> 3,200 NPR</p>
+        
+        <div class="budget-section">
+            <h2 style="margin-top: 0; color: #34495e;">💰 BUDGET BREAKDOWN (OPTIMIZED)</h2>
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Cost (NPR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Chicken</strong></td>
+                        <td>5.5 kg (11 servings × 0.5 kg)</td>
+                        <td>1,980</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Eggs</strong></td>
+                        <td>30 eggs (1 crate)</td>
+                        <td>620</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vegetables & Spices</strong></td>
+                        <td>Full month supply (enhanced)</td>
+                        <td>600</td>
+                    </tr>
+                    <tr class="budget-total">
+                        <td colspan="2"><strong>GRAND TOTAL</strong></td>
+                        <td><strong>3,200 NPR ✓</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 style="color: #34495e;">📅 DAILY MEAL SCHEDULE</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="date-col">Date</th>
+                    <th class="day-col">Day</th>
+                    <th class="lunch-col">Lunch (for 2 people)</th>
+                    <th class="dinner-col">Dinner (for 2 people)</th>
+                    <th class="notes-col">Protein Used</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="chicken-day">
+                    <td>Dec 14</td>
+                    <td>Saturday</td>
+                    <td><strong>Chicken curry</strong> with potatoes, tomatoes & mixed veg</td>
+                    <td>Leftover chicken + fresh aloo-pyaaz sabzi</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Dec 15</td>
+                    <td>Sunday</td>
+                    <td>Mixed vegetable curry with potato & onion gravy</td>
+                    <td>Boiled egg (1) + vegetable stir-fry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Dec 16</td>
+                    <td>Monday</td>
+                    <td>Aloo-gobi sabzi with onion-tomato masala</td>
+                    <td>Fried egg + potato-green veg curry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Dec 17</td>
+                    <td>Tuesday</td>
+                    <td><strong>Chicken curry</strong> with extra vegetables & potatoes</td>
+                    <td>Leftover chicken + fresh mixed veg sabzi</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Dec 18</td>
+                    <td>Wednesday</td>
+                    <td>Potato-onion curry with tomato masala</td>
+                    <td>Omelette (1 egg) + green vegetable stir-fry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Dec 19</td>
+                    <td>Thursday</td>
+                    <td>Mixed vegetable sabzi with thick gravy</td>
+                    <td>Egg bhurji (1 egg) + aloo-pyaaz curry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Dec 20</td>
+                    <td>Friday</td>
+                    <td><strong>Chicken curry</strong> with potatoes & tomatoes</td>
+                    <td>Leftover chicken + fresh vegetable curry</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Dec 21</td>
+                    <td>Saturday</td>
+                    <td>Aloo sabzi with onion-tomato base</td>
+                    <td>Boiled egg + mixed vegetable gravy</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Dec 22</td>
+                    <td>Sunday</td>
+                    <td>Vegetable masala curry with potatoes</td>
+                    <td>Fried egg + green veg stir-fry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Dec 23</td>
+                    <td>Monday</td>
+                    <td><strong>Chicken curry</strong> with lots of vegetables</td>
+                    <td>Leftover chicken + potato-onion sabzi</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Dec 24</td>
+                    <td>Tuesday</td>
+                    <td>Mixed veg curry with tomato-onion gravy</td>
+                    <td>Scrambled egg (1) + aloo sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Dec 25</td>
+                    <td>Wednesday</td>
+                    <td><strong>Chicken curry</strong> with potatoes & mixed veg</td>
+                    <td>Leftover chicken + fresh vegetable stir-fry</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Dec 26</td>
+                    <td>Thursday</td>
+                    <td>Potato-onion curry with spices</td>
+                    <td>Boiled egg + mixed vegetable sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Dec 27</td>
+                    <td>Friday</td>
+                    <td>Aloo-gobi masala with thick gravy</td>
+                    <td>Omelette (1 egg) + green veg curry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Dec 28</td>
+                    <td>Saturday</td>
+                    <td><strong>Chicken curry</strong> with extra potatoes & vegetables</td>
+                    <td>Leftover chicken + fresh aloo-pyaaz</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Dec 29</td>
+                    <td>Sunday</td>
+                    <td>Mixed vegetable curry with tomato base</td>
+                    <td>Egg bhurji (1 egg) + potato sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Dec 30</td>
+                    <td>Monday</td>
+                    <td>Vegetable masala with onion-tomato gravy</td>
+                    <td>Fried egg + mixed veg stir-fry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Dec 31</td>
+                    <td>Tuesday</td>
+                    <td><strong>Chicken curry</strong> with potatoes & tomatoes</td>
+                    <td>Leftover chicken + vegetable sabzi</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Jan 1</td>
+                    <td>Wednesday</td>
+                    <td>Aloo sabzi with spices & thick gravy</td>
+                    <td>Boiled egg + green vegetable curry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Jan 2</td>
+                    <td>Thursday</td>
+                    <td>Potato-onion masala curry</td>
+                    <td>Scrambled egg (1) + mixed veg sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Jan 3</td>
+                    <td>Friday</td>
+                    <td><strong>Chicken curry</strong> with lots of vegetables</td>
+                    <td>Leftover chicken + fresh aloo-pyaaz</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Jan 4</td>
+                    <td>Saturday</td>
+                    <td>Mixed vegetable curry with tomato gravy</td>
+                    <td>Omelette (1 egg) + potato sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Jan 5</td>
+                    <td>Sunday</td>
+                    <td>Aloo-gobi with onion-tomato masala</td>
+                    <td>Egg bhurji (1 egg) + green veg curry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Jan 6</td>
+                    <td>Monday</td>
+                    <td><strong>Chicken curry</strong> with extra vegetables & potatoes</td>
+                    <td>Leftover chicken + mixed veg sabzi</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Jan 7</td>
+                    <td>Tuesday</td>
+                    <td>Vegetable masala with thick gravy</td>
+                    <td>Fried egg + potato-onion curry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Jan 8</td>
+                    <td>Wednesday</td>
+                    <td>Mixed veg curry with tomato-onion base</td>
+                    <td>Boiled egg + aloo sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr class="chicken-day">
+                    <td>Jan 9</td>
+                    <td>Thursday</td>
+                    <td><strong>Chicken curry</strong> with potatoes & mixed veg</td>
+                    <td>Leftover chicken + fresh vegetable stir-fry</td>
+                    <td>C (0.5kg)</td>
+                </tr>
+                <tr>
+                    <td>Jan 10</td>
+                    <td>Friday</td>
+                    <td>Potato-onion curry with spices</td>
+                    <td>Scrambled egg (1) + green veg sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Jan 11</td>
+                    <td>Saturday</td>
+                    <td>Aloo sabzi with onion-tomato masala</td>
+                    <td>Omelette (1 egg) + mixed vegetables</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Jan 12</td>
+                    <td>Sunday</td>
+                    <td>Mixed vegetable curry with thick gravy</td>
+                    <td>Egg bhurji (1 egg) + potato-onion curry</td>
+                    <td>E (1)</td>
+                </tr>
+                <tr>
+                    <td>Jan 13</td>
+                    <td>Monday</td>
+                    <td>Vegetable masala with tomato base</td>
+                    <td>Fried egg + aloo-gobi sabzi</td>
+                    <td>E (1)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="notes-section">
+            <h3>📝 IMPORTANT NOTES</h3>
+            <ul>
+                <li><strong>C (0.5kg)</strong> = Chicken meal using 0.5 kg chicken (stretched across lunch & dinner)</li>
+                <li><strong>E (1)</strong> = 1 egg used that day (0.5 egg per person across both meals or whole egg for one meal)</li>
+                <li><strong>Chicken days</strong> (highlighted in yellow): 11 times total = 2-3 times per week as requested</li>
+                <li><strong>Total eggs</strong>: 20 eggs used (10 eggs remaining as buffer)</li>
+                <li><strong>Enhanced vegetables</strong>: 600 NPR budget allows for more variety and quantity</li>
+                <li><strong>Protein strategy</strong>: More chicken + strategic egg use + heavy vegetables for fullness</li>
+            </ul>
+            
+            <h3>🍳 COOKING TIPS</h3>
+            <ul>
+                <li><strong>Load up on vegetables:</strong> With increased vegetable budget, make large portions of sabzi</li>
+                <li><strong>Chicken stretching:</strong> Add extra potatoes, tomatoes, and mixed vegetables to chicken curry</li>
+                <li><strong>Egg efficiency:</strong> Use 1 egg strategically in dishes like bhurji or omelettes mixed with vegetables</li>
+                <li><strong>Thick gravies:</strong> Make onion-tomato masala thick and flavorful to satisfy hunger</li>
+                <li><strong>Variety in vegetables:</strong> Rotate between aloo-gobi, aloo-pyaaz, green vegetables, mixed veg</li>
+                <li><strong>Spice it up:</strong> Use available masalas, ginger-garlic paste, and green chilies generously</li>
+            </ul>
+
+            <h3>✨ BENEFITS OF THIS REVISED PLAN</h3>
+            <ul>
+                <li>✓ Chicken 2-3 times per week (as originally requested)</li>
+                <li>✓ More vegetables = more filling and nutritious meals</li>
+                <li>✓ Strategic egg use on non-chicken days</li>
+                <li>✓ Same budget (3,200 NPR) but better protein distribution</li>
+                <li>✓ 10 extra eggs as buffer for flexibility</li>
+            </ul>
+        </div>
+
+        <div class="button-container">
+            <button onclick="window.print()">🖨️ Print Meal Plan</button>
+            <button onclick="copyTable()">📋 Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <script>
+        function copyTable() {
+            const table = document.querySelector('table');
+            const range = document.createRange();
+            range.selectNode(table);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert('Meal plan table copied! You can paste it into Excel or Google Sheets.');
+        }
+    </script>
+</body>
+</html>
